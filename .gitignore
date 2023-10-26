@@ -1,3 +1,2 @@
-secret.py
-key.json
-_pycache_
+/secret
+.vscode

@@ -1,9 +1,9 @@
 import gspread
 import pandas as pd
-import secret
+from secret import secret
 # Autenticação e obtenção de dados do Google Planilhas
 
-gc = gspread.service_account(filename='key.json')
+gc = gspread.service_account(filename='secret/key.json')
 sh = gc.open_by_key(secret.planCode)
 ws = sh.worksheet('Outubro')
 
